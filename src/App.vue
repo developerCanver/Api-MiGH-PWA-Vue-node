@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Header title="Portafolio GH" />
+
+    <Container />
+    <Footer />
+    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Header from "./components/Header";
+  import Footer from "./components/Footer";
+  import Container from "./components/Container";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  //importando el Header creado con su propiedades
+  //
+  export default {
+    components: {
+      Header,
+      Footer,
+      Container,
+      
+    },
+  };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusei Magic', sans-serif;
+  }
 </style>
